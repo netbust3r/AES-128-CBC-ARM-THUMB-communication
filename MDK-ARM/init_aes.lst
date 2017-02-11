@@ -1,0 +1,272 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             SIMPLE_PROG,CODE,READONLY
+    2 00000000         
+    3 00000000         __initenc
+                               PROC
+    4 00000000                 EXPORT           __initenc
+    5 00000000         
+    6 00000000 E92D 1FFE       PUSH             {r1-r12}
+    7 00000004         
+    8 00000004 4951            ldr              r1,=0x20000200
+    9 00000006         
+   10 00000006         ;mov r5,#0x32
+   11 00000006         ;strb r5,[r1]
+   12 00000006         ;add r1,r1,#0x01
+   13 00000006         ;mov r5,#0x43
+   14 00000006         ;strb r5,[r1]
+   15 00000006         ;add r1,r1,#0x01
+   16 00000006         ;mov r5,#0xf6
+   17 00000006         ;strb r5,[r1]
+   18 00000006         ;add r1,r1,#0x01
+   19 00000006         ;mov r5,#0xa8
+   20 00000006         ;strb r5,[r1]
+   21 00000006         ;add r1,r1,#0x01
+   22 00000006         ;mov r5,#0x88
+   23 00000006         ;strb r5,[r1]
+   24 00000006         ;add r1,r1,#0x01
+   25 00000006         ;mov r5,#0x5a
+   26 00000006         ;strb r5,[r1]
+   27 00000006         ;add r1,r1,#0x01
+   28 00000006         ;mov r5,#0x30
+   29 00000006         ;strb r5,[r1]
+   30 00000006         ;add r1,r1,#0x01
+   31 00000006         ;mov r5,#0x8d
+   32 00000006         ;strb r5,[r1]
+   33 00000006         ;add r1,r1,#0x01
+   34 00000006         ;mov r5,#0x31
+   35 00000006         ;strb r5,[r1]
+   36 00000006         ;add r1,r1,#0x01
+   37 00000006         ;mov r5,#0x31
+   38 00000006         ;strb r5,[r1]
+   39 00000006         ;add r1,r1,#0x01
+   40 00000006         ;mov r5,#0x98
+   41 00000006         ;strb r5,[r1]
+   42 00000006         ;add r1,r1,#0x01
+   43 00000006         ;mov r5,#0xa2
+   44 00000006         ;strb r5,[r1]
+   45 00000006         ;add r1,r1,#0x01
+   46 00000006         ;mov r5,#0xe0
+   47 00000006         ;strb r5,[r1]
+   48 00000006         ;add r1,r1,#0x01
+   49 00000006         ;mov r5,#0x37
+   50 00000006         ;strb r5,[r1]
+   51 00000006         ;add r1,r1,#0x01
+   52 00000006         ;mov r5,#0x07
+   53 00000006         ;strb r5,[r1]
+   54 00000006         ;add r1,r1,#0x01
+   55 00000006         ;mov r5,#0x34
+   56 00000006         ;strb r5,[r1]
+   57 00000006         
+   58 00000006 F04F 0500       mov              r5,#0x00
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+   59 0000000A 700D            strb             r5,[r1]
+   60 0000000C F101 0101       add              r1,r1,#0x01
+   61 00000010 F04F 0511       mov              r5,#0x11
+   62 00000014 700D            strb             r5,[r1]
+   63 00000016 F101 0101       add              r1,r1,#0x01
+   64 0000001A F04F 0522       mov              r5,#0x22
+   65 0000001E 700D            strb             r5,[r1]
+   66 00000020 F101 0101       add              r1,r1,#0x01
+   67 00000024 F04F 0533       mov              r5,#0x33
+   68 00000028 700D            strb             r5,[r1]
+   69 0000002A F101 0101       add              r1,r1,#0x01
+   70 0000002E F04F 0544       mov              r5,#0x44
+   71 00000032 700D            strb             r5,[r1]
+   72 00000034 F101 0101       add              r1,r1,#0x01
+   73 00000038 F04F 0555       mov              r5,#0x55
+   74 0000003C 700D            strb             r5,[r1]
+   75 0000003E F101 0101       add              r1,r1,#0x01
+   76 00000042 F04F 0566       mov              r5,#0x66
+   77 00000046 700D            strb             r5,[r1]
+   78 00000048 F101 0101       add              r1,r1,#0x01
+   79 0000004C F04F 0577       mov              r5,#0x77
+   80 00000050 700D            strb             r5,[r1]
+   81 00000052 F101 0101       add              r1,r1,#0x01
+   82 00000056 F04F 0588       mov              r5,#0x88
+   83 0000005A 700D            strb             r5,[r1]
+   84 0000005C F101 0101       add              r1,r1,#0x01
+   85 00000060 F04F 0599       mov              r5,#0x99
+   86 00000064 700D            strb             r5,[r1]
+   87 00000066 F101 0101       add              r1,r1,#0x01
+   88 0000006A F04F 05AA       mov              r5,#0xaa
+   89 0000006E 700D            strb             r5,[r1]
+   90 00000070 F101 0101       add              r1,r1,#0x01
+   91 00000074 F04F 05BB       mov              r5,#0xbb
+   92 00000078 700D            strb             r5,[r1]
+   93 0000007A F101 0101       add              r1,r1,#0x01
+   94 0000007E F04F 05CC       mov              r5,#0xcc
+   95 00000082 700D            strb             r5,[r1]
+   96 00000084 F101 0101       add              r1,r1,#0x01
+   97 00000088 F04F 05DD       mov              r5,#0xdd
+   98 0000008C 700D            strb             r5,[r1]
+   99 0000008E F101 0101       add              r1,r1,#0x01
+  100 00000092 F04F 05EE       mov              r5,#0xee
+  101 00000096 700D            strb             r5,[r1]
+  102 00000098 F101 0101       add              r1,r1,#0x01
+  103 0000009C F04F 05FF       mov              r5,#0xff
+  104 000000A0 700D            strb             r5,[r1]
+  105 000000A2         
+  106 000000A2         
+  107 000000A2         
+  108 000000A2 492B            ldr              r1,=0x20000220
+  109 000000A4         
+  110 000000A4         ;mov r5,#0x2b
+  111 000000A4         ;strb r5,[r1]
+  112 000000A4         ;add r1,r1,#0x01
+  113 000000A4         ;mov r5,#0x7e
+  114 000000A4         ;strb r5,[r1]
+  115 000000A4         ;add r1,r1,#0x01
+  116 000000A4         ;mov r5,#0x15
+  117 000000A4         ;strb r5,[r1]
+
+
+
+ARM Macro Assembler    Page 3 
+
+
+  118 000000A4         ;add r1,r1,#0x01
+  119 000000A4         ;mov r5,#0x16
+  120 000000A4         ;strb r5,[r1]
+  121 000000A4         ;add r1,r1,#0x01
+  122 000000A4         ;mov r5,#0x28
+  123 000000A4         ;strb r5,[r1]
+  124 000000A4         ;add r1,r1,#0x01
+  125 000000A4         ;mov r5,#0xae
+  126 000000A4         ;strb r5,[r1]
+  127 000000A4         ;add r1,r1,#0x01
+  128 000000A4         ;mov r5,#0xd2
+  129 000000A4         ;strb r5,[r1]
+  130 000000A4         ;add r1,r1,#0x01
+  131 000000A4         ;mov r5,#0xa6
+  132 000000A4         ;strb r5,[r1]
+  133 000000A4         ;add r1,r1,#0x01
+  134 000000A4         ;mov r5,#0xab
+  135 000000A4         ;strb r5,[r1]
+  136 000000A4         ;add r1,r1,#0x01
+  137 000000A4         ;mov r5,#0xf7
+  138 000000A4         ;strb r5,[r1]
+  139 000000A4         ;add r1,r1,#0x01
+  140 000000A4         ;mov r5,#0x15
+  141 000000A4         ;strb r5,[r1]
+  142 000000A4         ;add r1,r1,#0x01
+  143 000000A4         ;mov r5,#0x88
+  144 000000A4         ;strb r5,[r1]
+  145 000000A4         ;add r1,r1,#0x01
+  146 000000A4         ;mov r5,#0x09
+  147 000000A4         ;strb r5,[r1]
+  148 000000A4         ;add r1,r1,#0x01
+  149 000000A4         ;mov r5,#0xcf
+  150 000000A4         ;strb r5,[r1]
+  151 000000A4         ;add r1,r1,#0x01
+  152 000000A4         ;mov r5,#0x4f
+  153 000000A4         ;strb r5,[r1]
+  154 000000A4         ;add r1,r1,#0x01
+  155 000000A4         ;mov r5,#0x3c
+  156 000000A4         ;strb r5,[r1]
+  157 000000A4         ;add r1,r1,#0x01
+  158 000000A4         
+  159 000000A4 F04F 0500       mov              r5,#0x00
+  160 000000A8 700D            strb             r5,[r1]
+  161 000000AA F101 0101       add              r1,r1,#0x01
+  162 000000AE F04F 0501       mov              r5,#0x01
+  163 000000B2 700D            strb             r5,[r1]
+  164 000000B4 F101 0101       add              r1,r1,#0x01
+  165 000000B8 F04F 0502       mov              r5,#0x02
+  166 000000BC 700D            strb             r5,[r1]
+  167 000000BE F101 0101       add              r1,r1,#0x01
+  168 000000C2 F04F 0503       mov              r5,#0x03
+  169 000000C6 700D            strb             r5,[r1]
+  170 000000C8 F101 0101       add              r1,r1,#0x01
+  171 000000CC F04F 0504       mov              r5,#0x04
+  172 000000D0 700D            strb             r5,[r1]
+  173 000000D2 F101 0101       add              r1,r1,#0x01
+  174 000000D6 F04F 0505       mov              r5,#0x05
+  175 000000DA 700D            strb             r5,[r1]
+  176 000000DC F101 0101       add              r1,r1,#0x01
+
+
+
+ARM Macro Assembler    Page 4 
+
+
+  177 000000E0 F04F 0506       mov              r5,#0x06
+  178 000000E4 700D            strb             r5,[r1]
+  179 000000E6 F101 0101       add              r1,r1,#0x01
+  180 000000EA F04F 0507       mov              r5,#0x07
+  181 000000EE 700D            strb             r5,[r1]
+  182 000000F0 F101 0101       add              r1,r1,#0x01
+  183 000000F4 F04F 0508       mov              r5,#0x08
+  184 000000F8 700D            strb             r5,[r1]
+  185 000000FA F101 0101       add              r1,r1,#0x01
+  186 000000FE F04F 0509       mov              r5,#0x09
+  187 00000102 700D            strb             r5,[r1]
+  188 00000104 F101 0101       add              r1,r1,#0x01
+  189 00000108 F04F 050A       mov              r5,#0x0a
+  190 0000010C 700D            strb             r5,[r1]
+  191 0000010E F101 0101       add              r1,r1,#0x01
+  192 00000112 F04F 050B       mov              r5,#0x0b
+  193 00000116 700D            strb             r5,[r1]
+  194 00000118 F101 0101       add              r1,r1,#0x01
+  195 0000011C F04F 050C       mov              r5,#0x0c
+  196 00000120 700D            strb             r5,[r1]
+  197 00000122 F101 0101       add              r1,r1,#0x01
+  198 00000126 F04F 050D       mov              r5,#0x0d
+  199 0000012A 700D            strb             r5,[r1]
+  200 0000012C F101 0101       add              r1,r1,#0x01
+  201 00000130 F04F 050E       mov              r5,#0x0e
+  202 00000134 700D            strb             r5,[r1]
+  203 00000136 F101 0101       add              r1,r1,#0x01
+  204 0000013A F04F 050F       mov              r5,#0x0f
+  205 0000013E 700D            strb             r5,[r1]
+  206 00000140 F101 0101       add              r1,r1,#0x01
+  207 00000144         
+  208 00000144         
+  209 00000144         
+  210 00000144 E8BD 1FFE       POP              {r1-r12}
+  211 00000148 4770            BX               R14
+  212 0000014A                 ENDP
+  213 0000014A                 END
+              00 00 20000200 
+              20000220 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
+erwork --depend="usb cdc vitrual com port\init_aes.d" -o"usb cdc vitrual com po
+rt\init_aes.o" -I"C:\Users\TSAFAS\Dropbox\Project\USB CDC Vitrual Com Port\MDK-
+ARM\RTE\_USB_CDC_Vitrual_Com_Port" -IE:\keil\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Inc
+lude -IE:\keil\ARM\PACK\Keil\STM32F4xx_DFP\2.10.0\Drivers\CMSIS\Device\ST\STM32
+F4xx\Include --predefine="__EVAL SETA 1" --predefine="__MICROLIB SETA 1" --pred
+efine="__UVISION_VERSION SETA 522" --predefine="_RTE_ SETA 1" --predefine="STM3
+2F407xx SETA 1" --list=init_aes.lst "USB CDC Vitrual Com Port\init_aes.s"
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+SIMPLE_PROG 00000000
+
+Symbol: SIMPLE_PROG
+   Definitions
+      At line 1 in file USB
+   Uses
+      None
+Comment: SIMPLE_PROG unused
+__initenc 00000000
+
+Symbol: __initenc
+   Definitions
+      At line 3 in file USB
+   Uses
+      At line 4 in file USB
+Comment: __initenc used once
+2 symbols
+340 symbols in table
